@@ -136,7 +136,10 @@ Examples:
 
 */
 function addKeyAndValue(arr,key,value){
-    
+    arr.forEach(function(val){
+        val[key]=value;
+    });
+    return arr;
 }
 
 /*
