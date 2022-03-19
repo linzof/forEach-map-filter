@@ -153,7 +153,22 @@ Examples:
     vowelCount('I Am awesome and so are you') // {i: 1, a: 4, e: 3, o: 3, u: 1};
 */
 function vowelCount(str){
-   
+   let splitArr = str.split('');
+   let obj = {};
+   const vowels = 'aeiou';
+
+   splitArr.forEach(function(letter){
+        let lowerCased = letter.toLowerCase();
+        if(vowels.indexOf(lowerCased)!== -1){
+            if(obj[lowerCased]){
+                obj[lowerCased]++;
+            }
+            else{
+                obj[lowerCased] = 1;
+            }
+        }
+   })
+   return obj
 }
 
 /*
