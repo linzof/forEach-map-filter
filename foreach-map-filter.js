@@ -7,7 +7,7 @@ Examples:
 
 */
 
-const arr  = [1,2,3];
+
 
 function doubleValues(arr){
     let newArr = [];
@@ -84,8 +84,47 @@ Examples:
 
 */
 function showFirstAndLast(arr){
-    
+    let newArr = [];
+    arr.forEach(function(val){
+        if(typeof val === 'string' || val instanceof String){
+            newArr.push(val[0] + val[val.length -1]);
+        }
+    });
+    return newArr;
 }
+function showFirst(arr){
+    let newArr = [];
+    arr.forEach(function(val){
+        if(typeof val === 'string' || val instanceof String){
+            newArr.push(val[0]);
+        }
+    });
+    return newArr;
+}
+function showLast(arr){
+    let newArr = [];
+    arr.forEach(function(val){
+        if(typeof val === 'string' || val instanceof String){
+            newArr.push(val[val.length -1]);
+        }
+    });
+    return newArr;
+}
+function showMiddle(arr){
+    let newArr = [];
+
+    arr.forEach(function(val){
+        if(typeof val === 'string' || val instanceof String){
+            newArr.push(val[val.length / 2 | 0]);
+        }
+        else{
+            throw new Error(`BAD ARRAY, the current ARRAY === [${arr}] but VALUES NEEDS to be STRING`);
+        }
+    });
+    return newArr;
+}
+
+
 
 /*
 Write a function called addKeyAndValue which accepts an array of objects, a key, and a value and returns the array passed to the function with the new key and value added for each object 
