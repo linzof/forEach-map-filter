@@ -168,7 +168,7 @@ function vowelCount(str){
             }
         }
    })
-   return obj
+   return obj;
 }
 
 /*
@@ -179,8 +179,18 @@ Examples:
     doubleValuesWithMap([1,-2,-3]) // [2,-4,-6]
 */
 
-function doubleValuesWithMap(arr) {}
-
+function doubleValuesWithMap(arr) {return arr.map(function(val){return val*2})}
+function tripleValuesWithMap(arr) {return arr.map(function(val){return val *3})}
+function quadrupleValuesWithMap(arr){
+    return arr.map(function(val){
+        return val *4
+    })
+}
+function quintupleValuesWithMap(arr){
+    return arr.map(function(val){
+        return val*5
+    })
+}
 /*
 Write a function called valTimesIndex which accepts an array and returns a new array with each value multiplied by the index it is currently at in the array.
 
