@@ -32,6 +32,29 @@ function quadrupleValues(arr){
     return newArr;
 }
 
+function quintupleValues(arr){
+    let newArr = [];
+    arr.forEach(function(val){
+        newArr.push(val*5)
+    });
+    return newArr;
+}
+
+function sextupleValues(arr){
+    let newArr = [];
+    arr.forEach(function(val){
+        newArr.push(val*6)
+    });
+    return newArr;
+}
+
+function septupleValues(arr){
+    let newArr = [];
+    arr.forEach(function(val){
+        newArr.push(val *7)
+    });
+    return newArr;
+}
 /*
 Write a function called onlyEvenValues which accepts an array and returns a new array with only the even values in the array passed to the function
 
