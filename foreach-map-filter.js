@@ -55,6 +55,8 @@ function septupleValues(arr){
     });
     return newArr;
 }
+//END
+
 /*
 Write a function called onlyEvenValues which accepts an array and returns a new array with only the even values in the array passed to the function
 
@@ -64,7 +66,13 @@ Examples:
 
 */
 function onlyEvenValues(arr){
-    
+    let newArr = [];
+    arr.forEach(function(val){
+        if(val % 2 === 0){
+            newArr.push(val)
+        }
+    })
+    return newArr;
 }
 
 /*
